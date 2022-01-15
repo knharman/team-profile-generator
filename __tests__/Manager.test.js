@@ -12,7 +12,7 @@ test('gets ID from Manager', () => {
 
 test('invalid Id', () => {
     let manager = new Manager("Kellie", 0, "knharman@gmail.com");
-    expect(manager.getId()).toBe('manager does not have a valid ID');
+    expect(manager.getId()).toBe('employee does not have a valid ID');
 });
 
 test('gets email from Manager', () => {
