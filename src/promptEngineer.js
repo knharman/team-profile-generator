@@ -1,5 +1,6 @@
 const inquirer = require("inquirer")
 const promptIntern = require('./promptIntern')
+const generateHTML = require('./generateHTML')
 
 const promptEngineer = function (previousAnswers) {
     inquirer
@@ -45,6 +46,7 @@ const promptEngineer = function (previousAnswers) {
                 default:
                     console.log("user picked quit")
                     console.log(previousAnswers)
+                    generateHTML(previousAnswers)
             }
         })
         .catch((error) => {
