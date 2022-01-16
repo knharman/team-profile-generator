@@ -55,7 +55,29 @@ const managerQuestions = function () {
     //         console.error(error)
     //     });
 
-    generateHTML()
+    generateHTML({
+        name: 'Kellie',
+        id: '1274347',
+        email: 'knharman@gmail.com',
+        office: '12',
+        addition: 'Engineer',
+        employees: [
+          {
+            name: 'Cody',
+            id: '1294583',
+            email: 'me@gmail.com',
+            github: 'mygithub',
+            addition: 'Intern'
+          },
+          {
+            name: 'Wigg',
+            id: '1285693',
+            email: 'wigg@waffles.com',
+            school: 'Radford',
+            addition: 'Quit'
+          }
+        ]
+      })
 }
 
 module.exports = managerQuestions
