@@ -1,0 +1,12 @@
+#cardBackground {
+    background-color: rgb(58, 137, 240);
+    color: whitesmoke;
+}
+
+#navbarStyle {
+    background-color: rgb(250, 57, 105);
+    color: whitesmoke;
+    justify-content: center; 
+    padding: 8px;
+    margin: 4px;
+}
