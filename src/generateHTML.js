@@ -56,12 +56,10 @@ function writeToFile(fileName, data) {
 
 const generateHTML = function(answers) {
     const employeeArray = createEmployeeArray(answers)
-    console.log(employeeArray)
 
     let employeeCardsHTML = ""
 
     employeeArray.forEach((employee) => {
-        console.log('employeeArray.forEach' + employee.getHTML())
         employeeCardsHTML += employee.getHTML()
     })
 
@@ -96,8 +94,5 @@ const generateHTML = function(answers) {
 
     writeToFile('./dist/index.html', html)
 }
-
-
-
 
 module.exports = generateHTML
